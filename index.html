@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural Soap - Inicio</title>
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/pages/index.css">
+  <!-- Favicon -->
+  <link rel="icon" href="img-sources/Soap-logo.png">
+</head>
+<body>
+  <header id="main-header">
+    <div class="logo">
+      <img src="img-sources/soap_fixed_transparent@2x.png" alt="Logo Soap">
+    </div>
+
+    <!-- Botón menú hamburguesa redondo - AHORA AL FINAL -->
+    <div class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> <span data-translate="header_home">Inicio</span></a></li>
+        <li><a href="productos.html"><i class="fa-solid fa-shop"></i> <span data-translate="header_products">Nuestros Productos</span></a></li>
+        <li><a href="sobre-nosotros.html"><i class="fa-solid fa-users"></i> <span data-translate="header_about">Sobre Nosotros</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Burbuja de idioma -->
+<div id="lang-bubble" class="lang-bubble">
+  <i class="fa-solid fa-language"></i>
+  <div class="lang-options">
+    <button data-lang="es">🇪🇸 Español</button>
+    <button data-lang="en">🇬🇧 English</button>
+    <button id="secret-page">🌱 Aprender</button>
+  </div>
+</div>
+<main>
+
+<main class="homepage">
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title" data-translate="hero_title">Jabones Artesanales que <span class="highlight">Cuidan tu Piel</span></h1>
+      <p class="hero-description" data-translate="hero_description">Descubre la esencia de la naturaleza en cada barra. Elaborados con ingredientes 100% naturales, nuestros jabones te transportan a un mundo de aromas puros y texturas suaves que transforman tu rutina diaria en un momento especial.</p>
+      <div class="hero-buttons">
+        <a href="productos.html" class="btn primary" data-translate="hero_button_primary">Explorar Productos</a>
+        <a href="#beneficios" class="btn secondary" data-translate="hero_button_secondary">Conoce Más</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="img-sources/flower-soap.png" alt="Jabón artesanal con forma de flor" class="soap-image">
+      <div class="glow-effect"></div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="benefits-section">
+    <div class="container">
+      <h2 data-translate="benefits_title">¿Por Qué Elegir Nuestros Jabones?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🌿</div>
+          <h3 data-translate="benefit_natural_title">100% Natural</h3>
+          <p data-translate="benefit_natural_description">Ingredientes puros de la naturaleza, sin químicos agresivos</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">✨</div>
+          <h3 data-translate="benefit_handmade_title">Hecho a Mano</h3>
+          <p data-translate="benefit_handmade_description">Cada barra es única, creada con cuidado y atención al detalle</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">💚</div>
+          <h3 data-translate="benefit_eco_title">Eco-Friendly</h3>
+          <p data-translate="benefit_eco_description">Embalaje sostenible y procesos respetuosos con el medio ambiente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Sección de Proceso y Sustentabilidad -->
+<section id="proceso" class="process-section">
+  <div class="container">
+    <h2 class="section-title" data-translate="process_title">Nuestro Compromiso con la Naturaleza</h2>
+    
+    <!-- Proceso de Eutrofización -->
+    <div class="process-card">
+      <div class="process-header">
+        <i class="fas fa-exclamation-triangle"></i>
+        <h3 data-translate="eutrophication_title">El Problema de la Eutrofización</h3>
+      </div>
+      <div class="process-content">
+        <p class="process-description" data-translate="eutrophication_description">
+          La eutrofización es el enriquecimiento excesivo de un cuerpo de agua con nutrientes como fósforo y nitrógeno, principalmente por actividades humanas. Esto provoca una proliferación masiva de algas, la muerte de la vegetación acuática y un descenso drástico del oxígeno disuelto.
+        </p>
+        
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-water"></i></div>
+            <h4 data-translate="step_water_title">Enturbiamiento del agua</h4>
+            <p data-translate="step_water_description">Crecimiento descontrolado de algas y plantas acuáticas</p>
+          </div>
+          
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-sun"></i></div>
+            <h4 data-translate="step_sunlight_title">Falta de luz solar</h4>
+            <p data-translate="step_sunlight_description">La vegetación de fondo no puede realizar la fotosíntesis</p>
+          </div>
+          
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-wind"></i></div>
+            <h4 data-translate="step_oxygen_title">Consumo de oxígeno</h4>
+            <p data-translate="step_oxygen_description">Bacterias consumen grandes cantidades de oxígeno</p>
+          </div>
+          
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-fish"></i></div>
+            <h4 data-translate="step_suffocation_title">Asfixia de la vida acuática</h4>
+            <p data-translate="step_suffocation_description">La falta de oxígeno causa la muerte de peces y organismos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Químicos Dañinos -->
+    <div class="chemicals-section">
+      <h3 class="chemicals-title" data-translate="chemicals_title">Químicos Dañinos que Evitamos</h3>
+      
+      <div class="chemicals-grid">
+        <div class="chemical-card">
+          <div class="chemical-icon"><i class="fas fa-tint"></i></div>
+          <h4 data-translate="chemical_phosphates_title">Fosfatos</h4>
+          <p data-translate="chemical_phosphates_description">Fertilizante directo que desencadena la eutrofización</p>
+        </div>
+        
+        <div class="chemical-card">
+          <div class="chemical-icon"><i class="fas fa-microchip"></i></div>
+          <h4 data-translate="chemical_microplastics_title">Microperlas de Plástico</h4>
+          <p data-translate="chemical_microplastics_description">Microplásticos que contaminan ecosistemas acuáticos</p>
+        </div>
+        
+        <div class="chemical-card">
+          <div class="chemical-icon"><i class="fas fa-flask"></i></div>
+          <h4 data-translate="chemical_parabens_title">Parabenos</h4>
+          <p data-translate="chemical_parabens_description">Conservantes sospechosos de ser disruptores endocrinos</p>
+        </div>
+        
+        <div class="chemical-card">
+          <div class="chemical-icon"><i class="fas fa-bacteria"></i></div>
+          <h4 data-translate="chemical_triclosan_title">Triclosán</h4>
+          <p data-translate="chemical_triclosan_description">Agente antibacteriano tóxico para organismos acuáticos</p>
+        </div>
+        
+        <div class="chemical-card">
+          <div class="chemical-icon"><i class="fas fa-wind"></i></div>
+          <h4 data-translate="chemical_phthalates_title">Ftalatos</h4>
+          <p data-translate="chemical_phthalates_description">Químicos ocultos en "fragancias" que son disruptores endocrinos</p>
+        </div>
+        
+        <div class="chemical-card">
+          <div class="chemical-icon"><i class="fas fa-allergies"></i></div>
+          <h4 data-translate="chemical_sls_title">Lauril Sulfato de Sodio (SLS)</h4>
+          <p data-translate="chemical_sls_description">Surfactante que produce espuma pero es fuerte irritante</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Acciones Prácticas -->
+    <div class="actions-section">
+      <h3 class="actions-title" data-translate="actions_title">Acciones Prácticas para Reducir la Contaminación</h3>
+      
+      <div class="actions-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="consumo" data-translate="tab_consumption">Consumo</button>
+          <button class="tab-btn" data-tab="uso" data-translate="tab_usage">Uso</button>
+          <button class="tab-btn" data-tab="educacion" data-translate="tab_education">Educación</button>
+        </div>
+        
+        <div class="tab-content">
+          <div class="tab-panel active" id="consumo">
+            <div class="action-item">
+              <i class="fas fa-shopping-bag"></i>
+              <div>
+                <h4 data-translate="action_phosphate_free_title">Compra Jabones Sin Fosfatos</h4>
+                <p data-translate="action_phosphate_free_description">Busca etiquetas que digan "Libre de Fosfatos" o "Biodegradable"</p>
+              </div>
+            </div>
+            
+            <div class="action-item">
+              <i class="fas fa-soap"></i>
+              <div>
+                <h4 data-translate="action_bar_soap_title">Opta por Jabones en Barra</h4>
+                <p data-translate="action_bar_soap_description">Contienen menos químicos sintéticos y menos agua que los líquidos</p>
+              </div>
+            </div>
+            
+            <div class="action-item">
+              <i class="fas fa-tags"></i>
+              <div>
+                <h4 data-translate="action_avoid_chemicals_title">Evita Químicos Clave</h4>
+                <p data-translate="action_avoid_chemicals_description">No compres productos que contengan Triclosán, Parabenos o Microplásticos</p>
+              </div>
+            </div>
+            
+            <div class="action-item">
+              <i class="fas fa-store"></i>
+              <div>
+                <h4 data-translate="action_local_brands_title">Elige Marcas Locales y Artesanales</h4>
+                <p data-translate="action_local_brands_description">Apoya productores locales con fórmulas transparentes y naturales</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-panel" id="uso">
+            <div class="action-item">
+              <i class="fas fa-hand-holding-water"></i>
+              <div>
+                <h4 data-translate="action_minimal_use_title">Usa Solo lo Necesario</h4>
+                <p data-translate="action_minimal_use_description">Reduce la cantidad de jabón al mínimo necesario para limpiar</p>
+              </div>
+            </div>
+            
+            <div class="action-item">
+              <i class="fas fa-recycle"></i>
+              <div>
+                <h4 data-translate="action_multipurpose_title">Productos Multiusos</h4>
+                <p data-translate="action_multipurpose_description">Usa el mismo jabón natural para cuerpo y manos</p>
+              </div>
+            </div>
+            
+            <div class="action-item">
+              <i class="fas fa-tree"></i>
+              <div>
+                <h4 data-translate="action_avoid_natural_water_title">Evita Usar Jabón en Cuerpos de Agua Naturales</h4>
+                <p data-translate="action_avoid_natural_water_description">Nunca laves directamente en ríos o lagos cuando estés al aire libre</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-panel" id="educacion">
+            <div class="action-item">
+              <i class="fas fa-qrcode"></i>
+              <div>
+                <h4 data-translate="action_qr_code_title">Comparte el Código QR</h4>
+                <p data-translate="action_qr_code_description">Educa a otros sobre la eutrofización y la importancia de cambiar de jabón</p>
+              </div>
+            </div>
+            
+            <div class="action-item">
+              <i class="fas fa-search"></i>
+              <div>
+                <h4 data-translate="action_check_labels_title">Revisa las Etiquetas de Otros Productos</h4>
+                <p data-translate="action_check_labels_description">Aplica lo aprendido sobre fosfatos y parabenos a detergentes y productos de limpieza</p>
+              </div>
+            </div>
+            
+            <div class="action-item">
+              <i class="fas fa-comments"></i>
+              <div>
+                <h4 data-translate="action_request_eco_title">Solicita Opciones Ecológicas</h4>
+                <p data-translate="action_request_eco_description">Pide a supermercados y tiendas que aumenten su inventario de productos libres de fosfatos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Columna 1: Logo y descripción -->
+      <div class="footer-column">
+        <img src="img-sources/soap_fixed_transparent@2x.png" alt="Natural Soap" class="footer-logo">
+        <p class="footer-description" data-translate="footer_description">
+          Jabones artesanales que cuidan tu piel y el medio ambiente. 
+          Ingredientes 100% naturales, hechos con amor y responsabilidad.
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="footer-column">
+        <h4 data-translate="footer_navigation">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-translate="footer_links_home">Inicio</a></li>
+          <li><a href="productos.html" data-translate="footer_links_products">Productos</a></li>
+          <li><a href="index.html#proceso" data-translate="footer_links_process">Nuestro Proceso</a></li>
+          <li><a href="sobre-nosotros.html" data-translate="footer_links_about">Sobre nosotros</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Redes sociales -->
+      <div class="footer-column">
+        <h4 data-translate="footer_follow">Síguenos</h4>
+        <div class="social-links">
+          <a href="https://instagram.com/naturalsoap" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+            <span data-translate="footer_instagram">Instagram</span>
+          </a>
+          <a href="https://wa.me/50376141401" target="_blank" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="footer_whatsapp">WhatsApp</span>
+          </a>
+          <a href="mailto:naturalsoap499@gmail.com" class="social-link">
+            <i class="far fa-envelope"></i>
+            <span data-translate="footer_email">Email</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna 4: Contacto -->
+      <div class="footer-column">
+        <h4 data-translate="footer_contact">Contacto</h4>
+        <div class="contact-info">
+          <p><i class="fab fa-whatsapp"></i> <span data-translate="footer_phone">+503 7614 1401</span></p>
+          <p><i class="far fa-envelope"></i> naturalsoap499@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea divisoria -->
+    <div class="footer-divider"></div>
+
+    <!-- Créditos discretos -->
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p data-translate="footer_copyright">&copy; 2025 Natural Soap. Todos los derechos reservados.</p>
+      </div>
+      <div class="developer-credit">
+        <p>
+          <span data-translate="footer_developer">Sitio desarrollado con ❤️ por Jeremy Torres</span> | 
+          <a href="mailto:jeremy.torres2026@adoc.superate.org.sv" class="credit-link" data-translate="footer_developer_email">Email</a> | 
+          <a href="https://wa.me/50361429731" target="_blank" class="credit-link" data-translate="footer_developer_whatsapp">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/pages/index.js"></script>
+</body>
+</html>

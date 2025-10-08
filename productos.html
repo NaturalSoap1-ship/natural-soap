@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural Soap - Productos</title>
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/pages/productos.css">
+  <!-- Favicon -->
+  <link rel="icon" href="img-sources/Soap-logo.png">
+</head>
+<body>
+  <header id="main-header">
+    <div class="logo">
+      <img src="img-sources/soap_fixed_transparent@2x.png" alt="Logo Soap">
+    </div>
+
+    <!-- Botón menú hamburguesa redondo - AHORA AL FINAL -->
+    <div class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> <span data-translate="header_home">Inicio</span></a></li>
+        <li><a href="productos.html"><i class="fa-solid fa-shop"></i> <span data-translate="header_products">Nuestros Productos</span></a></li>
+        <li><a href="sobre-nosotros.html"><i class="fa-solid fa-users"></i> <span data-translate="header_about">Sobre Nosotros</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Burbuja de idioma -->
+<div id="lang-bubble" class="lang-bubble">
+  <i class="fa-solid fa-language"></i>
+  <div class="lang-options">
+    <button data-lang="es">🇪🇸 Español</button>
+    <button data-lang="en">🇬🇧 English</button>
+    <button id="secret-page">🌱 Aprender</button>
+  </div>
+</div>
+<main>
+
+
+<!-- Hero Section -->
+<section class="products-hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title" data-translate="products_hero_title">Nuestros <span class="highlight">Productos Naturales</span></h1>
+      <p class="hero-description" data-translate="products_hero_description">
+        Descubre nuestra línea de jabones artesanales 100% naturales. 
+        Cada barra está elaborada con ingredientes puros que cuidan tu piel y el medio ambiente.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section class="products-section">
+  <div class="container">
+    <div class="products-grid">
+      <!-- Jabón de Arroz Individual -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img-sources/Soap1.jpeg" alt="Jabón de Arroz" class="product-img">
+          <div class="product-badge">Más Vendido</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name" data-translate="product_rice_title">Jabón de Arroz Natural</h3>
+          <p class="product-description" data-translate="product_rice_description">
+            Suaviza y revitaliza la piel con extractos naturales de arroz. Ideal para todo tipo de piel.
+          </p>
+          <div class="product-price">
+            <span class="price">$0.75</span>
+            <span class="unit" data-translate="product_unit">c/u</span>
+          </div>
+          <button class="btn primary buy-btn" data-product="Jabón de Arroz Individual - $0.75">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="product_buy_button">Comprar Ahora</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Jabón de Manzana Individual -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img-sources/Soap2.jpeg" alt="Jabón de Manzana" class="product-img">
+          <div class="product-badge">Nuevo</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name" data-translate="product_apple_title">Jabón de Manzana</h3>
+          <p class="product-description" data-translate="product_apple_description">
+            Forma divertida de manzana con propiedades antioxidantes. Perfecto para piel sensible.
+          </p>
+          <div class="product-price">
+            <span class="price">$0.75</span>
+            <span class="unit" data-translate="product_unit">c/u</span>
+          </div>
+          <button class="btn primary buy-btn" data-product="Jabón de Manzana Individual - $0.75">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="product_buy_button">Comprar Ahora</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Combo 4 Jabones Cuadrados -->
+      <div class="product-card combo-card">
+        <div class="product-image">
+          <img src="img-sources/Soap-combo1.jpeg" alt="Combo 4 Jabones Cuadrados" class="product-img">
+          <div class="product-badge combo-badge" data-translate="product_combo">Combo</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name" data-translate="product_combo_square_title">Combo 4 Jabones Cuadrados</h3>
+          <p class="product-description" data-translate="product_combo_square_description">
+            Pack económico con 4 jabones de arroz naturales. Ahorra y cuida tu piel.
+          </p>
+          <div class="product-price">
+            <span class="old-price">$3.00</span>
+            <span class="price">$2.50</span>
+            <span class="save-badge" data-translate="product_save">Ahorras $0.50</span>
+          </div>
+          <button class="btn primary buy-btn" data-product="Combo 4 Jabones Cuadrados - $2.50">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="product_buy_button">Comprar Ahora</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Combo 4 Jabones Manzana -->
+      <div class="product-card combo-card">
+        <div class="product-image">
+          <img src="img-sources/Soap-combo2.jpeg" alt="Combo 4 Jabones Manzana" class="product-img">
+          <div class="product-badge combo-badge" data-translate="product_combo">Combo</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name" data-translate="product_combo_apple_title">Combo 4 Jabones Manzana</h3>
+          <p class="product-description" data-translate="product_combo_apple_description">
+            4 jabones con forma de manzana. Divertidos y nutritivos para tu piel.
+          </p>
+          <div class="product-price">
+            <span class="old-price">$3.00</span>
+            <span class="price">$2.50</span>
+            <span class="save-badge" data-translate="product_save">Ahorras $0.50</span>
+          </div>
+          <button class="btn primary buy-btn" data-product="Combo 4 Jabones Manzana - $2.50">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="product_buy_button">Comprar Ahora</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="products-benefits">
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <i class="fas fa-shipping-fast"></i>
+          <h4 data-translate="benefit_delivery_title">Entrega Rápida</h4>
+          <p data-translate="benefit_delivery_description">Recibe tus productos en 24-48 horas</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-leaf"></i>
+          <h4 data-translate="benefit_eco_title2">100% Natural</h4>
+          <p data-translate="benefit_eco_description2">Ingredientes naturales y ecológicos</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h4 data-translate="benefit_handmade_title2">Hecho a Mano</h4>
+          <p data-translate="benefit_handmade_description2">Cada barra es única y artesanal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Columna 1: Logo y descripción -->
+      <div class="footer-column">
+        <img src="img-sources/soap_fixed_transparent@2x.png" alt="Natural Soap" class="footer-logo">
+        <p class="footer-description" data-translate="footer_description">
+          Jabones artesanales que cuidan tu piel y el medio ambiente. 
+          Ingredientes 100% naturales, hechos con amor y responsabilidad.
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="footer-column">
+        <h4 data-translate="footer_navigation">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.php" data-translate="footer_links_home">Inicio</a></li>
+          <li><a href="productos.php" data-translate="footer_links_products">Productos</a></li>
+          <li><a href="index.php#proceso" data-translate="footer_links_process">Nuestro Proceso</a></li>
+          <li><a href="sobre-nosotros.php" data-translate="footer_links_about">Sobre nosotros</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Redes sociales -->
+      <div class="footer-column">
+        <h4 data-translate="footer_follow">Síguenos</h4>
+        <div class="social-links">
+          <a href="https://instagram.com/naturalsoap" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+            <span data-translate="footer_instagram">Instagram</span>
+          </a>
+          <a href="https://wa.me/50376141401" target="_blank" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="footer_whatsapp">WhatsApp</span>
+          </a>
+          <a href="mailto:naturalsoap499@gmail.com" class="social-link">
+            <i class="far fa-envelope"></i>
+            <span data-translate="footer_email">Email</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna 4: Contacto -->
+      <div class="footer-column">
+        <h4 data-translate="footer_contact">Contacto</h4>
+        <div class="contact-info">
+          <p><i class="fab fa-whatsapp"></i> <span data-translate="footer_phone">+503 7614 1401</span></p>
+          <p><i class="far fa-envelope"></i> naturalsoap499@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea divisoria -->
+    <div class="footer-divider"></div>
+
+    <!-- Créditos discretos -->
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p data-translate="footer_copyright">&copy; 2025 Natural Soap. Todos los derechos reservados.</p>
+      </div>
+      <div class="developer-credit">
+        <p>
+          <span data-translate="footer_developer">Sitio desarrollado con ❤️ por Jeremy Torres</span> | 
+          <a href="mailto:jeremy.torres2026@adoc.superate.org.sv" class="credit-link" data-translate="footer_developer_email">Email</a> | 
+          <a href="https://wa.me/50361429731" target="_blank" class="credit-link" data-translate="footer_developer_whatsapp">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/pages/productos.js"></script>
+</body>
+</html>
