@@ -3,21 +3,25 @@
   <url>
     <loc>https://naturalsoap1-ship.github.io/natural-soap/</loc>
     <lastmod>2025-10-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://naturalsoap1-ship.github.io/natural-soap/productos.html</loc>
     <lastmod>2025-10-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://naturalsoap1-ship.github.io/natural-soap/sobre-nosotros.html</loc>
     <lastmod>2025-10-11</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://naturalsoap1-ship.github.io/natural-soap/secret-es.html</loc>
     <lastmod>2025-10-11</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>
