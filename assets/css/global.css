@@ -315,10 +315,6 @@ nav a:hover {
   font-size: 0.9rem;
 }
 
-.developer-credit {
-  text-align: right;
-}
-
 .credit-link {
   color: #C4AF94;
   text-decoration: none;
@@ -347,10 +343,6 @@ nav a:hover {
 
   .footer-bottom {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .developer-credit {
     text-align: center;
   }
 }
