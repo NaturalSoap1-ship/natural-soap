@@ -100,14 +100,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Página secreta - RUTA CORREGIDA
   if (secretBtn) {
     secretBtn.addEventListener("click", () => {
-      window.location.href = "/natural-soap/secret-es.html";
+      window.location.href = "secret-es.html";
     });
   }
 
   // Botón para volver a la página principal - NUEVO
   if (homeBtn) {
     homeBtn.addEventListener("click", () => {
-      window.location.href = "/natural-soap/index.html";
+      window.location.href = "index.html";
     });
   }
 
@@ -118,53 +118,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setLanguage(lang) {
   localStorage.setItem("siteLang", lang);
-  
-  // CORRECCIÓN: Usar ruta relativa en lugar de absoluta
-  fetch(`lang/${lang}.json`)
+  const cachedTranslations = window.SITE_TRANSLATIONS && window.SITE_TRANSLATIONS[lang];
+
+  if (cachedTranslations) {
+    applyTranslations(cachedTranslations);
+    return;
+  }
+
+  loadTranslations(lang)
+    .then(applyTranslations)
+    .catch(err => {
+      console.error("Error cargando idioma:", err);
+      const fallback = window.SITE_TRANSLATIONS && window.SITE_TRANSLATIONS.es;
+
+      if (fallback && lang !== "es") {
+        applyTranslations(fallback);
+        return;
+      }
+
+      alert(`No se pudo cargar el idioma ${lang}. Verifica que los archivos JSON existan en la carpeta /lang/`);
+    });
+}
+
+function applyTranslations(data) {
+  document.querySelectorAll("[data-translate]").forEach(el => {
+    const key = el.getAttribute("data-translate");
+    if (data[key]) {
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        el.value = data[key];
+      } else {
+        el.innerHTML = data[key];
+      }
+    }
+  });
+}
+
+function loadTranslations(lang) {
+  return fetch(`lang/${lang}.json`)
     .then(res => {
       if (!res.ok) {
         throw new Error(`Error HTTP: ${res.status}`);
       }
       return res.json();
     })
-    .then(data => {
-      document.querySelectorAll("[data-translate]").forEach(el => {
-        const key = el.getAttribute("data-translate");
-        if (data[key]) {
-          // Si el elemento es un input o textarea, usa value, sino innerHTML
-          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-            el.value = data[key];
-          } else {
-            el.innerHTML = data[key];
-          }
-        }
-      });
-    })
-    .catch(err => {
-      console.error("Error cargando idioma:", err);
-      console.log("Intentando cargar desde ruta alternativa...");
-      
-      // Fallback: intentar con ruta absoluta si la relativa falla
-      fetch(`/lang/${lang}.json`)
-        .then(res => {
-          if (!res.ok) throw new Error(`Error HTTP: ${res.status}`);
-          return res.json();
-        })
-        .then(data => {
-          document.querySelectorAll("[data-translate]").forEach(el => {
-            const key = el.getAttribute("data-translate");
-            if (data[key]) {
-              if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                el.value = data[key];
-              } else {
-                el.innerHTML = data[key];
-              }
-            }
-          });
-        })
-        .catch(fallbackErr => {
-          console.error("Error también con ruta alternativa:", fallbackErr);
-          alert(`No se pudo cargar el idioma ${lang}. Verifica que los archivos JSON existan en la carpeta /lang/`);
-        });
-    });
+    .catch(() => fetch(`/lang/${lang}.json`).then(res => {
+      if (!res.ok) {
+        throw new Error(`Error HTTP: ${res.status}`);
+      }
+      return res.json();
+    }));
 }
