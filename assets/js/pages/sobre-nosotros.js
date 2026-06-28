@@ -14,6 +14,7 @@ function animateOnScroll() {
   // Elements to animate
   const animatedElements = [
     ...document.querySelectorAll('.mv-card'),
+    ...document.querySelectorAll('.team-card'),
     ...document.querySelectorAll('.gallery-item'),
     ...document.querySelectorAll('.stat')
   ];
@@ -26,6 +27,8 @@ function animateOnScroll() {
         
         if (entry.target.classList.contains('mv-card')) {
           delay = Array.from(document.querySelectorAll('.mv-card')).indexOf(entry.target) * 200;
+        } else if (entry.target.classList.contains('team-card')) {
+          delay = Array.from(document.querySelectorAll('.team-card')).indexOf(entry.target) * 120;
         } else if (entry.target.classList.contains('gallery-item')) {
           delay = Array.from(document.querySelectorAll('.gallery-item')).indexOf(entry.target) * 100;
         } else if (entry.target.classList.contains('stat')) {
